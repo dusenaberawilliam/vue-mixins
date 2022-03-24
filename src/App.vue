@@ -1,19 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <CountOnClick />
+    <p>___________________</p>
+    <CountOnHover />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import CountOnClick from "./components/CountOnClick.vue";
+import CountOnHover from "./components/CountOnHover.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    CountOnClick,
+    CountOnHover,
+  },
+};
 </script>
 
 <style>
